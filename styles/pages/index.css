@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   background-image: url('../../assets/hero/sjøløve-show.jpg');
-  height: 70vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -51,6 +51,7 @@
 .hero__paragraph {
   color: var(--white);
   text-align: center;
+  font-size: 18px;
 }
 
 /* Credit to Stickers on https://stackoverflow.com/questions/35990445/how-to-move-a-div-up-and-down-infinitely-in-css3  */
@@ -67,7 +68,7 @@
 .hero-wave {
   animation: MoveUpDown 2.5s linear infinite;
   position: relative;
-  margin-top: -150px;
+  margin-top: -200px;
 }
 
 .main {
@@ -119,5 +120,6 @@
 
 .main-gallery__wave {
   position: relative;
-  top: -175px;
+  top: -240px;
+  width: 100%;
 }
