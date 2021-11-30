@@ -44,7 +44,7 @@ header {
 }
 
 .header__nav-link:hover {
-  color: var(--tertiary);
+  color: var(--black);
 }
 
 .header__nav-link--button:hover {

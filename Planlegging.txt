@@ -7,3 +7,5 @@ Bildegalleri med mulighet for å forstørre bilde hvis tid
 Deklarer css farger først #4274bc, #E1AD01
 Nyheter
 Kort i litt lysere farge enn mørk bakgrunn
+Hero waves blir broken i bredde 2165px
+Footer waves blir broken under 1812px foreløpig
