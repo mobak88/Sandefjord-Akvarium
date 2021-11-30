@@ -1,0 +1,105 @@
+@import '../reset.css';
+@import '../header.css';
+@import '../colors.css';
+@import '../typography.css';
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/sjøløve-show.jpg');
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text__wrapper {
+  background-color: var(--primary);
+  width: 33%;
+  max-width: 400px;
+  height: 320px;
+  padding: 35px;
+  margin: 0 30px;
+  border-radius: 20px;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text__wrapper:hover {
+  opacity: 1;
+  background-color: var(--secondary);
+}
+
+.hero__heading {
+  color: var(--white);
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero__paragraph {
+  color: var(--white);
+  text-align: center;
+}
+
+/* Credit to Stickers on https://stackoverflow.com/questions/35990445/how-to-move-a-div-up-and-down-infinitely-in-css3  */
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: 15px;
+  }
+}
+
+.hero-wave {
+  animation: MoveUpDown 2.5s linear infinite;
+  position: relative;
+  margin-top: -150px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 90px 0;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.main-text__wrapper {
+  width: 50%;
+  max-width: 800px;
+}
+
+.main-heading {
+  color: var(--primary);
+  font-size: 42px;
+}
+
+.main-paragraph {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.main-image__wrapper {
+  width: 50%;
+  max-width: 700px;
+  /* Box shadow from and credit to Material */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: transform 0.4s;
+}
+
+.main-image__wrapper:hover {
+  transform: scale(1.1);
+}

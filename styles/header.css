@@ -1,0 +1,53 @@
+@import '../colors.css';
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header {
+  background-color: var(--primary);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px 0 40px;
+}
+
+.header__logo-link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 30px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav > li {
+  list-style: none;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: var(--white);
+  margin: 12px;
+  font-size: 20px;
+}
+
+.header__nav-link--button {
+  background-color: var(--secondary);
+  padding: 12px 16px;
+  border-radius: 18px;
+  transition: transform 0.4s;
+}
+
+.header__nav-link:hover {
+  color: var(--tertiary);
+}
+
+.header__nav-link--button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}

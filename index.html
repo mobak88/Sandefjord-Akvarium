@@ -8,14 +8,105 @@
       content="Sandefjords nye akvarium, kom å se vår sjøløve-show. Vi har også mange spennede fisker."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/pages/index.css" rel="stylesheet" type="text/css" />
     <title>Sandefjord Akvarium - Forside</title>
   </head>
   <body>
     <header>
-      <div class="header__wrapper">
-        <div class="header__logo-wrapper"></div>
-        <div class="header__nav-wrapper"></div>
+      <div class="header">
+        <div class="header__logo-wrapper">
+          <a href="index.html" class="header__logo-link">Sandefjord Akvarium</a>
+        </div>
+        <nav>
+          <div class="header__nav-wrapper">
+            <ul class="header-nav">
+              <li><a class="header__nav-link" href="index.html">Forside</a></li>
+              <li><a class="header__nav-link" href="">Kontakt oss</a></li>
+              <li>
+                <a class="header__nav-link header__nav-link--button" href=""
+                  >Kjøp billetter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
+
+    <section>
+      <div class="hero">
+        <div class="hero-text__wrapper">
+          <h2 class="hero__heading">Sandefjord Akvarium</h2>
+          <p class="hero__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+            voluptates non unde voluptatibus repellendus similique veritatis
+            officia quaerat commodi debitis saepe praesentium
+          </p>
+        </div>
+        <div class="hero-text__wrapper">
+          <h2 class="hero__heading">Se vårt spennende nye sjøløve-show</h2>
+          <p class="hero__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+            voluptates non unde voluptatibus repellendus similique veritatis
+            officia quaerat commodi debitis saepe praesentium
+          </p>
+        </div>
+        <div class="hero-text__wrapper">
+          <h2 class="hero__heading">Se våre spennende fisker i akvariene</h2>
+          <p class="hero__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+            voluptates non unde voluptatibus repellendus similique veritatis
+            officia quaerat commodi debitis saepe praesentium
+          </p>
+        </div>
+      </div>
+      <!-- Credit to https://www.softr.io/tools/svg-wave-generator for the wave -->
+      <img
+        src="/assets/wave-top-linear-gradient.svg"
+        aria-hidden="true"
+        class="hero-wave"
+      />
+    </section>
+
+    <main>
+      <div class="main">
+        <div class="main-wrapper">
+          <div class="main-text__wrapper">
+            <h1 class="main-heading">Vi åpner nytt akvarium i Sandefjord</h1>
+            <p class="main-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              quos molestiae nemo recusandae modi natus labore omnis cumque,
+              accusamus, perspiciatis numquam voluptas velit tenetur ratione?
+              Illum excepturi assumenda deleniti possimus! Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="main-image__wrapper">
+            <img
+              src="./assets/akvarium-halv-pipe.jpg"
+              alt="Akvarium halvpipe med fisker over og rundt."
+            />
+          </div>
+        </div>
+        <div class="main-wrapper">
+          <div class="main-image__wrapper">
+            <img
+              src="./assets/sjøløve-svømmer-hode-over-vann.jpg"
+              alt="Sel som svømmer med hode over vann."
+            />
+          </div>
+          <div class="main-text__wrapper">
+            <h2 class="main-heading">Se vårt spennende nye sjøløve-show</h2>
+            <p class="main-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              quos molestiae nemo recusandae modi natus labore omnis cumque,
+              accusamus, perspiciatis numquam voluptas velit tenetur ratione?
+              Illum excepturi assumenda deleniti possimus! Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
