@@ -1,0 +1,9 @@
+Bølget design på seksjoner for å simulere bølger
+Havblå header og theme
+Norsk og engelsk versjon hvis jeg får tid
+Bestille billetter mulighet og som knapp i menyen
+Åpningstider
+Bildegalleri med mulighet for å forstørre bilde hvis tid
+Deklarer css farger først #4274bc, #E1AD01
+Nyheter
+Kort i litt lysere farge enn mørk bakgrunn
