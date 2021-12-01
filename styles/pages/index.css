@@ -6,12 +6,29 @@
 
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url('../../assets/hero/sjøløve-show.jpg');
   height: 80vh;
+  min-height: 1050px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero__heading-wrapper {
+  margin-bottom: 104px;
+  background-color: var(--secondary);
+  opacity: 0.9;
+  padding: 16px 22px;
+  border-radius: 16px;
+}
+
+.hero__card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .hero-text__wrapper {
@@ -40,6 +57,11 @@
 
 .hero-text__wrapper:nth-child(2):hover {
   background-color: var(--black);
+}
+
+.hero__heading--main {
+  font-size: 48px;
+  color: var(--white);
 }
 
 .hero__heading {
@@ -96,9 +118,21 @@
   font-size: 42px;
 }
 
+.main-heading--border {
+  border-bottom: 1px dotted var(--primary);
+  padding-bottom: 10px;
+}
+
+.main-subheading {
+  color: var(--primary);
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
 .main-paragraph {
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .main-image__wrapper {
@@ -147,10 +181,68 @@
 }
 
 .main-gallery__heading-wrapper {
-  border-top: 4px solid var(--primary);
+  border-top: 2px solid var(--primary);
   display: flex;
   justify-content: center;
   width: 100%;
   text-transform: uppercase;
   padding: 200px 0 50px 0;
+}
+
+@media screen and (max-width: 1615px) {
+  .hero-wave {
+    margin-top: -125px;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .main-wrapper--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .main-text__wrapper {
+    width: 80%;
+    max-width: 80%;
+    margin-bottom: 80px;
+  }
+
+  .main-image__wrapper {
+    width: 80%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .hero-wave {
+    margin-top: -88px;
+  }
+
+  .hero__card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text__wrapper {
+    width: 80%;
+    max-width: 80%;
+    height: 30%;
+  }
+
+  .hero {
+    height: 100%;
+  }
+
+  .hero__heading--main {
+    font-size: 36px;
+  }
+
+  .hero__heading-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .main-gallery__grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
 }

@@ -18,7 +18,7 @@
           <a href="index.html" class="header__logo-link">Sandefjord Akvarium</a>
         </div>
         <nav>
-          <div class="header__nav-wrapper">
+          <div>
             <ul class="header-nav">
               <li><a class="header__nav-link" href="index.html">Forside</a></li>
               <li><a class="header__nav-link" href="">Kontakt oss</a></li>
@@ -35,31 +35,41 @@
 
     <section>
       <div class="hero">
-        <div class="hero-text__wrapper">
-          <h2 class="hero__heading">Sandefjord Akvarium</h2>
-          <p class="hero__paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-            voluptates non unde voluptatibus repellendus similique veritatis
-            officia quaerat commodi debitis saepe praesentium
-          </p>
+        <div class="hero__heading-wrapper">
+          <h1 class="hero__heading--main">
+            Vi åpner nytt akvarium i Sandefjord
+          </h1>
         </div>
-        <div class="hero-text__wrapper">
-          <h2 class="hero__heading">Se vårt spennende nye sjøløve-show</h2>
-          <p class="hero__paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-            voluptates non unde voluptatibus repellendus similique veritatis
-            officia quaerat commodi debitis saepe praesentium
-          </p>
-        </div>
-        <div class="hero-text__wrapper">
-          <h2 class="hero__heading">Se våre spennende fisker i akvariene</h2>
-          <p class="hero__paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-            voluptates non unde voluptatibus repellendus similique veritatis
-            officia quaerat commodi debitis saepe praesentium
-          </p>
+        <div class="hero__card-wrapper">
+          <div class="hero-text__wrapper">
+            <h2 class="hero__heading">Sandefjord Akvarium</h2>
+            <p class="hero__paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              voluptates non unde voluptatibus repellendus similique veritatis
+              officia quaerat commodi debitis saepe praesentium
+            </p>
+          </div>
+          <div class="hero-text__wrapper">
+            <h2 class="hero__heading">Se vårt spennende nye sjøløve-show</h2>
+            <p class="hero__paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              voluptates non unde voluptatibus repellendus similique veritatis
+              officia quaerat commodi debitis saepe praesentium
+            </p>
+          </div>
+          <div class="hero-text__wrapper">
+            <h2 class="hero__heading">Se våre spennende fisker i akvariene</h2>
+            <p class="hero__paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              voluptates non unde voluptatibus repellendus similique veritatis
+              officia quaerat commodi debitis saepe praesentium
+            </p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <main>
       <!-- Credit to https://www.softr.io/tools/svg-wave-generator for the waves svgs -->
       <!-- Funker intill 1615px bredde tablet funker ned til 1070px -->
       <img
@@ -67,13 +77,13 @@
         aria-hidden="true"
         class="hero-wave"
       />
-    </section>
-
-    <main>
       <div class="main">
         <div class="main-wrapper">
           <div class="main-text__wrapper">
-            <h1 class="main-heading">Vi åpner nytt akvarium i Sandefjord</h1>
+            <h2 class="main-heading main-heading--border">
+              Velkommen til Sandefjord Akvarium
+            </h2>
+            <h3 class="main-subheading">Vi inviterer til åpen dag</h3>
             <p class="main-paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
               quos molestiae nemo recusandae modi natus labore omnis cumque,
@@ -89,7 +99,7 @@
             />
           </div>
         </div>
-        <div class="main-wrapper">
+        <div class="main-wrapper main-wrapper--reverse">
           <div class="main-image__wrapper">
             <img
               src="./assets/sjøløve-svømmer-hode-over-vann.jpg"
@@ -164,13 +174,55 @@
     </main>
 
     <footer>
+      <!-- Funker ned til 1550px mobile funker fra 865px og ned -->
+      <img src="./assets/waves/wave-top.svg" aria-hidden="true" />
       <div class="footer">
-        <!-- Funker ned til 1550px mobile funker fra 865px og ned -->
-        <img
-          src="./assets/waves/wave-top.svg"
-          aria-hidden="true"
-          class="footer__wave"
-        />
+        <div class="footer__section-wrapper">
+          <h2 class="footer__heading">Kontakt oss</h2>
+          <p class="footer__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            dolores ex quas, quos perferendis numquam distinctio eos asperiores
+            exercitationem accusantium, tenetur quam sequi quisquam vero libero
+            laboriosam fugit.
+          </p>
+          <a href="mailto:post@sandefjordakvarium.no"
+            ><p class="footer__contact-info">post@sandefjordakvarium.no</p></a
+          >
+          <a href="tel:+4722002200"
+            ><p class="footer__contact-info">Tlf: 22002200</p></a
+          >
+        </div>
+        <div class="footer__section-wrapper">
+          <h2 class="footer__heading">Om oss</h2>
+          <p class="footer__paragraph">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+            placeat laudantium sapiente vel omnis officiis assumenda blanditiis
+            atque quam porro, esse impedit sunt ad voluptatem tempore sed enim
+            reiciendis incidunt.
+          </p>
+        </div>
+        <div class="footer__section-wrapper">
+          <h2 class="footer__heading">Nyhetsbrev</h2>
+          <p class="footer__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
+            nam, ratione asperiores itaque dicta, aliquid nulla nihil.
+          </p>
+          <form action="submit" class="footer__newsletter-form">
+            <label for="newsletter" class="footer__newsletter-label"
+              >Din e-post adresse:</label
+            >
+            <span>
+              <input
+                id="newsletter"
+                type="text"
+                placeholder="Din e-post adresse"
+              />
+              <button type="submit" class="footer__newsletter-button">
+                Send
+              </button>
+            </span>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
