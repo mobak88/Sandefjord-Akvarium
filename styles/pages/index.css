@@ -288,6 +288,7 @@
 
   .main-gallery__heading-wrapper {
     padding-top: 100px;
+    width: 90%;
   }
 
   .main-gallery__heading-wrapper > h2 {
