@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Sandefjords nye akvarium, kom å se vår sjøløve-show. Vi har også mange spennede fisker."
-    />
+    <meta name="description" content="Sandefjord Akvarium, Kontakt side." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles/pages/index.css" type="text/css" rel="stylesheet" />
-    <title>Sandefjord Akvarium - Forside</title>
+    <link href="styles/pages/contact.css" type="text/css" rel="stylesheet" />
+    <title>Sandefjord Akvarium - Kontakt</title>
   </head>
   <body>
     <header>
@@ -56,6 +53,104 @@
       </div>
     </header>
 
+    <main>
+      <div class="contact__text-wrapper">
+        <h2 class="contact__heading">Kontakt oss</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorem
+          consectetur. Corrupti doloremque facilis nobis similique aliquam minus
+          omnis.
+        </p>
+      </div>
+      <div class="contact__form-wrapper">
+        <form class="contact__form" action="submit">
+          <div class="contact__form-grid">
+            <div class="contact__grid-items">
+              <label for="name">Navn*:</label>
+              <input
+                id="name"
+                placeholder="Ditt navn"
+                type="text"
+                name="Navn"
+                required
+              />
+            </div>
+            <div class="contact__grid-items contact__grid-items--right">
+              <label for="number">Nummer*:</label>
+              <input
+                id="number"
+                placeholder="Ditt nummer"
+                type="tel"
+                name="Nummer"
+                required
+              />
+            </div>
+            <div class="contact__grid-items">
+              <label for="email">E-post*:</label>
+              <input
+                id="email"
+                placeholder="Din E-post"
+                type="email"
+                name="E-post"
+                required
+              />
+            </div>
+            <div class="contact__grid-items contact__grid-items--right">
+              <label for="subject">Emne:</label>
+              <input
+                id="subject"
+                placeholder="Ditt emne"
+                type="text"
+                name="Emne"
+              />
+            </div>
+          </div>
+          <div class="contact__textarea-wrapper">
+            <label for="message">Melding*:</label>
+            <textarea
+              id="message"
+              name="Melding"
+              cols="30"
+              rows="10"
+              name="Melding"
+              placeholder="Din melding"
+              required
+            ></textarea>
+          </div>
+          <div class="contact__button-wrapper">
+            <button type="submit" class="contact__form-button">Send</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact__info-wrapper">
+        <div class="contact__info-card">
+          <h2 class="contact__heading contact__heading--smaller">
+            Kontakt info
+          </h2>
+          <a href="mailto:post@sandefjordakvarium.no"
+            ><p class="contact__info-paragraph">
+              E-post: post@sandefjordakvarium.no
+            </p></a
+          >
+          <a href="tel:+4722002200"
+            ><p class="contact__info-paragraph">Tlf: 22002200</p></a
+          >
+          <p class="contact__info-paragraph">
+            Adresse: Torget 7, 3210 Sandefjord
+          </p>
+        </div>
+        <div class="contact__info-card">
+          <h2 class="contact__heading contact__heading--smaller">
+            Åpningstider
+          </h2>
+          <p class="contact__opening-hours-paragraph">
+            Man - Fre: 10:00 - 18:00
+          </p>
+          <p class="contact__opening-hours-paragraph">Lør: 10:00 - 17:00</p>
+        </div>
+      </div>
+    </main>
+
     <footer>
       <img
         src="./assets/waves/wave-top.svg"
@@ -77,7 +172,9 @@
             laboriosam fugit.
           </p>
           <a href="mailto:post@sandefjordakvarium.no"
-            ><p class="footer__contact-info">post@sandefjordakvarium.no</p></a
+            ><p class="footer__contact-info">
+              E-post: post@sandefjordakvarium.no
+            </p></a
           >
           <a href="tel:+4722002200"
             ><p class="footer__contact-info">Tlf: 22002200</p></a
