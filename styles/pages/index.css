@@ -94,6 +94,10 @@
   margin-top: -200px;
 }
 
+.hero-wave__mobile {
+  display: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -149,7 +153,7 @@
 }
 
 .main-gallery {
-  margin: 50px 0 350px 0;
+  margin: 50px 0 150px 0;
 }
 
 .main-gallery__grid {
@@ -194,11 +198,16 @@
     margin-top: -125px;
   }
 
+  .main {
+    margin: 40px 0 300px 0;
+  }
+
   .main-wrapper {
     flex-direction: column;
   }
 
   .main-wrapper--reverse {
+    /* This is a bad practise for accessibility but I want to show that I can use it */
     flex-direction: column-reverse;
   }
 
@@ -242,7 +251,80 @@
     margin-bottom: 50px;
   }
 
+  .main {
+    margin-top: 0;
+  }
+
   .main-gallery__grid {
     grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero__card-wrapper {
+    margin-bottom: 70px;
+  }
+
+  .hero__heading--main {
+    font-size: 28px;
+  }
+
+  .hero-wave {
+    display: none;
+  }
+
+  .hero-wave__mobile {
+    display: block;
+    margin-top: -150px;
+  }
+
+  .main {
+    margin-bottom: 100px;
+  }
+
+  .main-gallery__heading-wrapper {
+    padding-top: 100px;
+  }
+
+  .main-gallery__heading-wrapper > h2 {
+    text-align: center;
+  }
+
+  .main-gallery__grid {
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  .main-gallery__image--cols-2 {
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__heading-wrapper {
+    width: 90%;
+  }
+
+  .hero__heading--main {
+    text-align: center;
+  }
+
+  .hero-wave__mobile {
+    display: block;
+    margin-top: -108px;
+  }
+
+  .main-heading {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hero-wave__mobile {
+    display: block;
+    margin-top: -75px;
   }
 }

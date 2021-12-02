@@ -22,11 +22,11 @@ header {
   font-size: 30px;
 }
 
-.header-nav {
+.header__nav {
   display: flex;
 }
 
-.header-nav > li {
+.header__nav > li {
   list-style: none;
 }
 
@@ -37,7 +37,7 @@ header {
   font-size: 20px;
 }
 
-.header__nav-link--button {
+.header__nav-link-button {
   background-color: var(--secondary);
   padding: 12px 16px;
   border-radius: 18px;
@@ -47,12 +47,65 @@ header {
   color: var(--black);
 }
 
-.header__nav-link--button:hover {
+.header__nav-link-button:hover {
   background-color: var(--black);
   color: var(--white);
 }
 
-/* Header breaks at 812px */
+.header__nav-hamburger {
+  background-color: transparent;
+  cursor: pointer;
+  width: 55px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+}
+
+.header__nav-hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 12px;
+}
+
+.header__nav-mobile {
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  background-color: var(--secondary);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header__nav-mobile--active {
+  display: flex;
+}
+
+.header__nav-mobile--current {
+  background-color: var(--black);
+}
+
+.header__nav-mobile li {
+  list-style: none;
+  padding: 30px 50px;
+  width: 100%;
+}
+
+.header__nav-mobile li:hover {
+  background-color: var(--primary);
+}
+
+.header__nav-mobile li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px;
+}
 
 @media screen and (max-width: 812px) {
   .header__logo-link {
@@ -63,14 +116,18 @@ header {
     font-size: 18px;
   }
 
-  .header__nav-link--button {
+  .header__nav-link-button {
     font-size: 18px;
     padding: 12px 10px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .header-nav {
+  .header__nav {
     display: none;
+  }
+
+  .header__nav-hamburger {
+    display: flex;
   }
 }

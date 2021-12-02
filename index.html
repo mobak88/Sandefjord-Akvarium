@@ -19,14 +19,29 @@
         </div>
         <nav>
           <div>
-            <ul class="header-nav">
+            <!-- Default menu -->
+            <ul class="header__nav">
               <li><a class="header__nav-link" href="index.html">Forside</a></li>
               <li><a class="header__nav-link" href="">Kontakt oss</a></li>
               <li>
-                <a class="header__nav-link header__nav-link--button" href=""
+                <a class="header__nav-link header__nav-link-button" href=""
                   >Kjøp billetter</a
                 >
               </li>
+            </ul>
+            <!-- Hamburger icon -->
+            <button href="#" class="header__nav-hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <!-- Mobile menu -->
+            <ul class="header__nav-mobile">
+              <li class="header__nav-mobile--current">
+                <a href="/">Forside</a>
+              </li>
+              <li><a href="/">Kjøp billetter</a></li>
+              <li><a href="/">Kontakt oss</a></li>
             </ul>
           </div>
         </nav>
@@ -71,11 +86,15 @@
 
     <main>
       <!-- Credit to https://www.softr.io/tools/svg-wave-generator for the waves svgs -->
-      <!-- Funker intill 1615px bredde tablet funker ned til 1070px -->
       <img
         src="/assets/waves/wave-top-linear-gradient.svg"
         aria-hidden="true"
         class="hero-wave"
+      />
+      <img
+        src="/assets/waves/wave-top-linear-gradient-mobile.svg"
+        aria-hidden="true"
+        class="hero-wave__mobile"
       />
       <div class="main">
         <div class="main-wrapper">
@@ -174,8 +193,16 @@
     </main>
 
     <footer>
-      <!-- Funker ned til 1550px mobile funker fra 865px og ned -->
-      <img src="./assets/waves/wave-top.svg" aria-hidden="true" />
+      <img
+        src="./assets/waves/wave-top.svg"
+        aria-hidden="true"
+        class="footer__wave"
+      />
+      <img
+        src="./assets/waves/wave-top-mobile.svg"
+        aria-hidden="true"
+        class="footer__wave-mobile"
+      />
       <div class="footer">
         <div class="footer__section-wrapper">
           <h2 class="footer__heading">Kontakt oss</h2>
@@ -225,5 +252,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script/script.js"></script>
   </body>
 </html>
