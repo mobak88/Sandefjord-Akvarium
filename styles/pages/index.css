@@ -288,7 +288,6 @@
 
   .main-gallery__heading-wrapper {
     padding-top: 100px;
-    width: 90%;
   }
 
   .main-gallery__heading-wrapper > h2 {
@@ -320,6 +319,7 @@
 
   .main-heading {
     font-size: 36px;
+    width: 90%;
   }
 }
 
