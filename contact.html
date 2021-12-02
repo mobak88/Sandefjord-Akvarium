@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Sandefjords nye akvarium, kom å se vår sjøløve-show. Vi har også mange spennede fisker."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/pages/index.css" type="text/css" rel="stylesheet" />
+    <title>Sandefjord Akvarium - Forside</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__logo-wrapper">
+          <a href="index.html" class="header__logo-link">Sandefjord Akvarium</a>
+        </div>
+        <nav>
+          <div>
+            <!-- Default menu -->
+            <ul class="header__nav">
+              <li><a class="header__nav-link" href="index.html">Forside</a></li>
+              <li>
+                <a class="header__nav-link header__nav-current" href=""
+                  >Kontakt oss</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-link header__nav-link--button" href=""
+                  >Kjøp billetter</a
+                >
+              </li>
+            </ul>
+            <!-- Hamburger icon -->
+            <button href="#" class="header__nav-hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <!-- Mobile menu -->
+            <ul class="header__nav-mobile">
+              <li>
+                <a href="./index.html">Forside</a>
+              </li>
+              <li>
+                <a href="/">Kjøp billetter</a>
+              </li>
+              <li class="header__nav-mobile--current">
+                <a href="/">Kontakt oss</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <footer>
+      <img
+        src="./assets/waves/wave-top.svg"
+        aria-hidden="true"
+        class="footer__wave"
+      />
+      <img
+        src="./assets/waves/wave-top-mobile.svg"
+        aria-hidden="true"
+        class="footer__wave-mobile"
+      />
+      <div class="footer">
+        <div class="footer__section-wrapper">
+          <h2 class="footer__heading">Kontakt oss</h2>
+          <p class="footer__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            dolores ex quas, quos perferendis numquam distinctio eos asperiores
+            exercitationem accusantium, tenetur quam sequi quisquam vero libero
+            laboriosam fugit.
+          </p>
+          <a href="mailto:post@sandefjordakvarium.no"
+            ><p class="footer__contact-info">post@sandefjordakvarium.no</p></a
+          >
+          <a href="tel:+4722002200"
+            ><p class="footer__contact-info">Tlf: 22002200</p></a
+          >
+        </div>
+        <div class="footer__section-wrapper">
+          <h2 class="footer__heading">Om oss</h2>
+          <p class="footer__paragraph">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+            placeat laudantium sapiente vel omnis officiis assumenda blanditiis
+            atque quam porro, esse impedit sunt ad voluptatem tempore sed enim
+            reiciendis incidunt.
+          </p>
+        </div>
+        <div class="footer__section-wrapper">
+          <h2 class="footer__heading">Nyhetsbrev</h2>
+          <p class="footer__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
+            nam, ratione asperiores itaque dicta, aliquid nulla nihil.
+          </p>
+          <form action="submit" class="footer__newsletter-form">
+            <label for="newsletter" class="footer__newsletter-label"
+              >Din e-post adresse:</label
+            >
+            <span>
+              <input
+                id="newsletter"
+                type="text"
+                placeholder="Din e-post adresse"
+              />
+              <button type="submit" class="footer__newsletter-button">
+                Send
+              </button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
