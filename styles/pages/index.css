@@ -329,4 +329,8 @@
     display: block;
     margin-top: -75px;
   }
+
+  .footer__contact-info {
+    word-wrap: break-word;
+  }
 }
