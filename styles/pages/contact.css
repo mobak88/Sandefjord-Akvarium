@@ -44,16 +44,6 @@
   flex-direction: column;
 }
 
-.contact__heading {
-  color: var(--primary);
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-.contact__heading--smaller {
-  font-size: 32px;
-}
-
 .contact__form {
   display: flex;
   flex-direction: column;

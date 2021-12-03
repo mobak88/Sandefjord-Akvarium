@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Sandefjord Akvarium, Kontakt side." />
+    <meta
+      name="description"
+      content="Sandefjord Akvarium, Kjøp billetter og prisoversikt."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles/pages/contact.css" type="text/css" rel="stylesheet" />
-    <title>Sandefjord Akvarium - Kontakt</title>
+    <link
+      href="styles/pages/buy-tickets.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <title>Sandefjord Akvarium - Kjøp billetter</title>
   </head>
   <body>
     <header>
@@ -20,14 +27,12 @@
             <ul class="header__nav">
               <li><a class="header__nav-link" href="index.html">Forside</a></li>
               <li>
-                <a class="header__nav-link header__nav-current" href="/"
+                <a class="header__nav-link" href="./contact.html"
                   >Kontakt oss</a
                 >
               </li>
               <li>
-                <a
-                  class="header__nav-link header__nav-link--button"
-                  href="./buy-tickets.html"
+                <a class="header__nav-link header__nav-link--button" href="/"
                   >Kjøp billetter</a
                 >
               </li>
@@ -43,11 +48,11 @@
               <li>
                 <a href="./index.html">Forside</a>
               </li>
-              <li>
+              <li class="header__nav-mobile--current">
                 <a href="./buy-tickets.html">Kjøp billetter</a>
               </li>
-              <li class="header__nav-mobile--current">
-                <a href="/">Kontakt oss</a>
+              <li class="/">
+                <a href="./contact.html">Kontakt oss</a>
               </li>
             </ul>
           </div>
@@ -56,95 +61,101 @@
     </header>
 
     <main>
-      <div class="contact__text-wrapper">
-        <h1>Kontakt oss</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorem
-          consectetur. Corrupti doloremque facilis nobis similique aliquam minus
-          omnis.
-        </p>
-      </div>
-      <div class="contact__form-wrapper">
-        <form class="contact__form" action="submit">
-          <div class="contact__form-grid">
-            <div class="contact__grid-items">
-              <label for="name">Navn*:</label>
-              <input
-                id="name"
-                placeholder="Ditt navn"
-                type="text"
-                name="Navn"
-                required
-              />
-            </div>
-            <div class="contact__grid-items">
-              <label for="number">Nummer*:</label>
-              <input
-                id="number"
-                placeholder="Ditt nummer"
-                type="tel"
-                name="Nummer"
-                required
-              />
-            </div>
-            <div class="contact__grid-items">
-              <label for="email">E-post*:</label>
-              <input
-                id="email"
-                placeholder="Din E-post"
-                type="email"
-                name="E-post"
-                required
-              />
-            </div>
-            <div class="contact__grid-items">
-              <label for="subject">Emne:</label>
-              <input
-                id="subject"
-                placeholder="Ditt emne"
-                type="text"
-                name="Emne"
-              />
-            </div>
-            <div class="contact__textarea-wrapper">
-              <label for="message">Melding*:</label>
-              <textarea
-                id="message"
-                name="Melding"
-                cols="30"
-                rows="10"
-                name="Melding"
-                placeholder="Din melding"
-                required
-              ></textarea>
-            </div>
-          </div>
-          <div class="contact__button-wrapper">
-            <button type="submit" class="contact__form-button">Send</button>
-          </div>
-        </form>
-      </div>
-      <div class="contact__info-wrapper">
-        <div class="contact__info-card">
-          <h2 class="contact__heading">Kontakt info</h2>
-          <a href="mailto:post@sandefjordakvarium.no"
-            ><p class="contact__info-paragraph">
-              E-post: post@sandefjordakvarium.no
-            </p></a
-          >
-          <a href="tel:+4722002200"
-            ><p class="contact__info-paragraph">Tlf: 22002200</p></a
-          >
-          <p class="contact__info-paragraph">
-            Adresse: Torget 7, 3210 Sandefjord
+      <div class="main__tickets-wrapper">
+        <div class="tickets-heading__wrapper">
+          <h1>Kjøp billetter og prisoversikt</h1>
+          <p>
+            Her kan du se oversikt over billettpriser og kjøpe billetter. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatibus deserunt repellat.
           </p>
         </div>
-        <div class="contact__info-card">
-          <h2 class="contact__heading">Åpningstider</h2>
-          <p class="contact__opening-hours-paragraph">
-            Man - Fre: 10:00 - 18:00
-          </p>
-          <p class="contact__opening-hours-paragraph">Lør: 10:00 - 17:00</p>
+
+        <div class="tickets__wrapper">
+          <div class="tickets__form-card">
+            <div>
+              <h2>Kjøp billetter</h2>
+            </div>
+            <form action="submit" class="tickets__form">
+              <div class="tickets__form-items-wrapper">
+                <label for="child-ticket">Barnebillett:</label>
+                <input
+                  type="number"
+                  min="1"
+                  max="100"
+                  step="1"
+                  id="child-ticket"
+                />
+              </div>
+              <div class="tickets__form-items-wrapper">
+                <label for="youth-ticket">Ungdomsbillett</label>
+                <input
+                  type="number"
+                  min="1"
+                  max="100"
+                  step="1"
+                  id="youth-ticket"
+                />
+              </div>
+              <div class="tickets__form-items-wrapper">
+                <label for="adult-ticket">Voksenbillett</label>
+                <input
+                  type="number"
+                  min="1"
+                  max="100"
+                  step="1"
+                  id="adult-ticket"
+                />
+              </div>
+              <div class="tickets__form-items-wrapper">
+                <label for="season-ticket">Sesongkort hele familien</label>
+                <input
+                  type="number"
+                  min="1"
+                  max="100"
+                  step="1"
+                  id="season-ticket"
+                />
+              </div>
+              <div class="tickets__form-items-wrapper">
+                <label for="date">Velg dato:</label>
+                <input type="date" id="date" />
+              </div>
+              <div class="tickets__button-wrapper">
+                <button type="submit" class="tickets__form-button">Kjøp</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="tickets__price-card">
+            <div>
+              <h2>Prisoversikt</h2>
+            </div>
+            <div class="price">
+              <table class="tickets__price-table">
+                <tr>
+                  <th>Bilett</th>
+                  <th>Pris</th>
+                </tr>
+                <tr>
+                  <td>Barnebillett</td>
+                  <td>49,-</td>
+                </tr>
+                <tr>
+                  <td>Ungdomsbillett</td>
+                  <td>79,-</td>
+                </tr>
+                <tr>
+                  <td>Voksenbillett</td>
+                  <td>99,-</td>
+                </tr>
+                <tr>
+                  <td>Sesongkort hele familien</td>
+                  <td>999,-</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </main>

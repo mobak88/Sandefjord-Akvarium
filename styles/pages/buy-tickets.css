@@ -1,0 +1,119 @@
+@import '../reset.css';
+@import '../header.css';
+@import '../colors.css';
+@import '../typography.css';
+@import '../footer.css';
+
+.main__tickets-wrapper {
+  margin: 150px 0;
+}
+
+.tickets-heading__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin-bottom: 100px;
+}
+
+.tickets-heading__wrapper h1,
+.tickets-heading__wrapper p {
+  max-width: 800px;
+  text-align: center;
+}
+
+.tickets__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.tickets__form-card,
+.tickets__price-card {
+  width: 35%;
+  background-color: var(--light-grey);
+  padding: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.tickets__form-card p,
+.tickets__price-card p {
+  margin-bottom: 20px;
+}
+
+.tickets__price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tickets__price-table td,
+.tickets__price-table th {
+  border: 1px solid var(--primary);
+  font-size: 20px;
+  text-align: left;
+  padding: 12px 24px;
+}
+
+.tickets__price-table th {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.tickets__form {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 34px 2%;
+}
+
+.tickets__button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  grid-column: span 2;
+}
+
+.tickets__form-button {
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  font-size: 20px;
+  padding: 16px 104px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.tickets__form-button:hover {
+  background-color: var(--black);
+}
+
+.tickets__form-items-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets__form-items-wrapper:nth-child(5) {
+  grid-column: span 2;
+}
+
+.tickets__form-items-wrapper label {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.tickets__form-items-wrapper input {
+  padding: 16px 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .tickets__form-card,
+  .tickets__price-card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tickets__form-card,
+  .tickets__price-card {
+    width: 90%;
+  }
+}
