@@ -199,7 +199,7 @@
   }
 
   .hero {
-    min-height: 900px;
+    min-height: 1100px;
   }
 }
 
@@ -230,6 +230,10 @@
 }
 
 @media screen and (max-width: 1020px) {
+  .hero {
+    background-image: url('../../assets/hero/sjøløve-show-tablet.jpg');
+  }
+
   .hero-wave {
     margin-top: -88px;
   }
@@ -298,6 +302,7 @@
   .hero {
     min-height: 400px;
     height: 400px;
+    background-image: url('../../assets/hero/sjøløve-show-mobile.jpg');
   }
 
   .hero__heading-wrapper {
