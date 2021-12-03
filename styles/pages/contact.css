@@ -27,6 +27,7 @@
 .contact__form-grid {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
+  gap: 34px 2%;
 }
 
 .contact__grid-items {
@@ -34,14 +35,10 @@
   flex-direction: column;
   width: 98%;
   border-bottom: 1px solid var(--black);
-  margin-bottom: 34px;
-}
-
-.contact__grid-items--right {
-  margin-left: auto;
 }
 
 .contact__textarea-wrapper {
+  grid-column: span 2;
   border-bottom: 1px solid var(--black);
   display: flex;
   flex-direction: column;
@@ -160,10 +157,16 @@
 @media screen and (max-width: 700px) {
   .contact__form-grid {
     grid-template-columns: repeat(1, 2fr);
+    gap: 34px 0;
   }
 
-  .contact__grid-items {
+  .contact__grid-items,
+  .contact__textarea-wrapper {
     width: 100%;
+  }
+
+  .contact__textarea-wrapper {
+    grid-column: span 1;
   }
 
   .contact__text-wrapper p,
@@ -176,7 +179,7 @@
   }
 
   .contact__form-wrapper {
-    margin-bottom: 70px;
+    margin: 0 auto 70px auto;
   }
 
   .contact__text-wrapper {
@@ -199,5 +202,12 @@
 
   .contact__opening-hours-paragraph {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact__grid-items,
+  .contact__textarea-wrapper {
+    width: 90%;
   }
 }

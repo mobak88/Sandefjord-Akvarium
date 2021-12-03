@@ -11,7 +11,7 @@
   justify-content: center;
   background-image: url('../../assets/hero/sjøløve-show.jpg');
   height: 60vh;
-  min-height: 850px;
+  min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -24,15 +24,14 @@
   border-radius: 16px;
 }
 
-.hero__card-wrapper {
+.main-card__wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin-bottom: 150px;
 }
 
-.hero-text__wrapper {
+.main__card {
   background-color: var(--primary);
   width: 33%;
   max-width: 400px;
@@ -47,32 +46,32 @@
   justify-content: center;
 }
 
-.hero-text__wrapper:nth-child(2) {
+.main__card:nth-child(2) {
   background-color: var(--secondary);
 }
 
-.hero-text__wrapper:hover {
+.main__card:hover {
   opacity: 1;
   background-color: var(--black);
 }
 
-.hero-text__wrapper:nth-child(2):hover {
+.main__card:nth-child(2):hover {
   background-color: var(--black);
 }
 
-.hero__heading--main {
+.hero__heading {
   font-size: 48px;
   color: var(--white);
 }
 
-.hero__heading {
+.main__card-heading {
   color: var(--white);
   font-size: 26px;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.hero__paragraph {
+.main__card-paragraph {
   color: var(--white);
   text-align: center;
   font-size: 18px;
@@ -199,26 +198,14 @@
     margin-top: -300px;
   }
 
-  .hero__card-wrapper {
-    margin-bottom: 250px;
-  }
-
   .hero {
-    min-height: 1000px;
+    min-height: 900px;
   }
 }
 
 @media screen and (max-width: 1615px) {
-  .hero {
-    min-height: 1200px;
-  }
-
   .hero-wave {
-    margin-top: -125px;
-  }
-
-  .main {
-    margin: 40px 0 300px 0;
+    margin-top: -130px;
   }
 
   .main-wrapper {
@@ -247,27 +234,18 @@
     margin-top: -88px;
   }
 
-  .hero__card-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-text__wrapper {
+  .main__card {
     width: 80%;
     max-width: 80%;
     height: 30%;
   }
 
-  .hero__heading--main {
+  .hero__heading {
     font-size: 36px;
   }
 
   .hero__heading-wrapper {
     margin-bottom: 50px;
-  }
-
-  .main {
-    margin-top: 0;
   }
 
   .main-gallery__grid {
@@ -276,22 +254,13 @@
 }
 
 @media screen and (max-width: 700px) {
-  .hero {
-    padding: 60px 0;
-  }
-
-  .hero__card-wrapper {
-    margin-bottom: 70px;
-    width: 100%;
-  }
-
-  .hero-text__wrapper {
+  .main__card {
     max-width: 90%;
     width: 90%;
     margin: 0;
   }
 
-  .hero__heading--main {
+  .hero__heading {
     font-size: 28px;
   }
 
@@ -327,20 +296,25 @@
 
 @media screen and (max-width: 500px) {
   .hero {
-    height: 1400px;
+    min-height: 400px;
+    height: 400px;
   }
 
   .hero__heading-wrapper {
     width: 90%;
   }
 
-  .hero__heading--main {
+  .hero__heading {
     text-align: center;
   }
 
   .hero-wave__mobile {
     display: block;
     margin-top: -108px;
+  }
+
+  .main {
+    margin-top: 60px;
   }
 
   .main-heading {
@@ -355,10 +329,6 @@
 }
 
 @media screen and (max-width: 350px) {
-  .hero {
-    height: 1600px;
-  }
-
   .hero__heading-wrapper {
     margin-bottom: 16px;
   }
@@ -370,11 +340,5 @@
 
   .footer__contact-info {
     word-wrap: break-word;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .hero {
-    height: 1700px;
   }
 }
