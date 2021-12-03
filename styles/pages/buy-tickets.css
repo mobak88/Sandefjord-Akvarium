@@ -37,6 +37,11 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.tickets__price-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .tickets__form-card p,
 .tickets__price-card p {
   margin-bottom: 20px;
@@ -111,6 +116,10 @@
   .tickets__form-items-wrapper:nth-child(3),
   .tickets__form-items-wrapper:nth-child(4) {
     grid-column: span 2;
+  }
+
+  .tickets__price-card {
+    height: 90%;
   }
 }
 
