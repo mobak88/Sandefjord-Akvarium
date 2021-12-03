@@ -130,6 +130,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .tickets-heading__wrapper {
+    margin-bottom: 50px;
+  }
   .main__tickets-wrapper {
     margin: 60px 0;
   }
