@@ -174,7 +174,7 @@
 }
 
 .main-gallery {
-  margin: 50px 0 150px 0;
+  margin: 150px 0 150px 0;
 }
 
 .main-gallery__grid {
@@ -210,7 +210,6 @@
   justify-content: center;
   width: 100%;
   text-transform: uppercase;
-  padding: 200px 0 50px 0;
 }
 
 @media screen and (min-width: 2550px) {
@@ -272,6 +271,18 @@
     grid-template-columns: repeat(2, 2fr);
   }
 
+  .main-wrapper {
+    margin: 100px 0;
+  }
+
+  .main-wrapper__sealion-show {
+    padding: 100px 0;
+  }
+
+  .main-gallery {
+    margin-top: 100px;
+  }
+
   .main-image__wrapper {
     width: 680px;
   }
@@ -299,10 +310,6 @@
 
   .main {
     margin-bottom: 100px;
-  }
-
-  .main-gallery__heading-wrapper {
-    padding-top: 100px;
   }
 
   .main-gallery__heading-wrapper > h2 {
