@@ -93,6 +93,7 @@
 
 .footer-attribution__link {
   color: var(--secondary);
+  text-decoration: none;
 }
 
 .footer-attribution__link:hover {
