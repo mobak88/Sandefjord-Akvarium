@@ -103,20 +103,35 @@
   /* Box shadow from https://getcssscan.com/css-box-shadow-examples */
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.contact__info-card > a {
+.contact__info-block {
+  display: flex;
+  gap: 20px;
+  word-break: break-word;
+}
+
+.contact__info-block > a {
   text-decoration: none;
   color: var(--black);
   font-size: 20px;
+  display: flex;
+  align-self: center;
 }
 
-.contact__info-card > a:hover {
+.contact__info-block > a:hover {
   color: var(--primary);
 }
 
+.contact__info-block > img {
+  height: 42px;
+  width: 42px;
+}
+
 .contact__info-paragraph {
-  margin-bottom: 12px;
   font-size: 20px;
 }
 
@@ -135,7 +150,6 @@
 @media screen and (max-width: 1000px) {
   .contact__info-wrapper {
     flex-direction: column;
-    word-wrap: break-word;
     align-items: center;
   }
 
