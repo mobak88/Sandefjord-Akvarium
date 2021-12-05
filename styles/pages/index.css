@@ -37,12 +37,10 @@
   max-width: 400px;
   height: 320px;
   padding: 35px;
-  margin: 0 30px;
   border-radius: 20px;
   opacity: 0.9;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
